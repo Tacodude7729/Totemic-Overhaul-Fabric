@@ -3,6 +3,7 @@ package net.fabricmc.totemicoverhaul.effects;
 import java.util.Set;
 
 import net.fabricmc.totemicoverhaul.TotemItem.TotemType;
+import net.fabricmc.totemicoverhaul.utils.SetUtils;
 import net.minecraft.item.Item;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
@@ -14,7 +15,7 @@ public class TotemEffectBlankPassive implements ITotemEffect {
     private String translationKey;
 
     public TotemEffectBlankPassive(String translationKey, Item upgradeItem, int[] costs) {
-        this.ingredients = Set.of(upgradeItem);
+        this.ingredients = SetUtils.of(upgradeItem);
         this.upgradeCosts = costs;
         this.translationKey = translationKey;
     }

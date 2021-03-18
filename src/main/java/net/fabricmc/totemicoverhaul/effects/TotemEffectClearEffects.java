@@ -4,6 +4,7 @@ import java.util.Set;
 
 import net.fabricmc.totemicoverhaul.TotemItem.TotemEffectInstance;
 import net.fabricmc.totemicoverhaul.TotemItem.TotemType;
+import net.fabricmc.totemicoverhaul.utils.SetUtils;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -12,7 +13,7 @@ import net.minecraft.text.TranslatableText;
 
 public class TotemEffectClearEffects implements ITotemEffect {
 
-    private static final Set<Item> ingredients = Set.of(Items.MILK_BUCKET);
+    private static final Set<Item> ingredients = SetUtils.of(Items.MILK_BUCKET);
 
     @Override
     public Text getTooltip() {

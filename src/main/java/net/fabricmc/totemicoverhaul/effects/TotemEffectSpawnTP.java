@@ -6,6 +6,7 @@ import java.util.Set;
 import net.fabricmc.totemicoverhaul.TotemItem.TotemEffectInstance;
 import net.fabricmc.totemicoverhaul.TotemItem.TotemType;
 import net.fabricmc.totemicoverhaul.mixins.ServerPlayerEntityRespawnMixin;
+import net.fabricmc.totemicoverhaul.utils.SetUtils;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
@@ -28,7 +29,7 @@ import net.minecraft.util.math.Vec3d;
 
 public class TotemEffectSpawnTP implements ITotemEffect {
 
-    private static final Set<Item> ingredients = Set.of(Items.ENDER_EYE);
+    private static final Set<Item> ingredients = SetUtils.of(Items.ENDER_EYE);
 
     @Override
     public Text getTooltip() {

@@ -4,6 +4,7 @@ import java.util.Set;
 
 import net.fabricmc.totemicoverhaul.TotemItem.TotemEffectInstance;
 import net.fabricmc.totemicoverhaul.TotemItem.TotemType;
+import net.fabricmc.totemicoverhaul.utils.SetUtils;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.server.world.ServerWorld;
@@ -23,7 +24,7 @@ public class TotemEffectWeather implements ITotemEffect {
         this.raining = raining;
         this.thundering = thundering;
         this.translationKey = translationKey;
-        this.ingredients = Set.of(ingredient);
+        this.ingredients = SetUtils.of(ingredient);
     }
 
     @Override

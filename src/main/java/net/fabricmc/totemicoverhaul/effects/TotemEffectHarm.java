@@ -4,6 +4,7 @@ import java.util.Set;
 
 import net.fabricmc.totemicoverhaul.TotemItem.TotemEffectInstance;
 import net.fabricmc.totemicoverhaul.TotemItem.TotemType;
+import net.fabricmc.totemicoverhaul.utils.SetUtils;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.Item;
@@ -13,7 +14,7 @@ import net.minecraft.text.TranslatableText;
 
 public class TotemEffectHarm implements ITotemEffect {
 
-    private static final Set<Item> ingredients = Set.of(Items.FERMENTED_SPIDER_EYE);
+    private static final Set<Item> ingredients = SetUtils.of(Items.FERMENTED_SPIDER_EYE);
     private static final int[] upgradeCosts = new int[] {8, 16};
 
     @Override

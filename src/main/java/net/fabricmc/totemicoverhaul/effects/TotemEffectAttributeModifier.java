@@ -8,6 +8,7 @@ import java.util.UUID;
 
 import net.fabricmc.totemicoverhaul.TotemItem.TotemEffectInstance;
 import net.fabricmc.totemicoverhaul.TotemItem.TotemType;
+import net.fabricmc.totemicoverhaul.utils.SetUtils;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -32,7 +33,7 @@ public class TotemEffectAttributeModifier implements ITotemEffect {
     public TotemEffectAttributeModifier(String translationKey, Item ingredient, int[] upgradeCosts) {
         this.tooltip = new TranslatableText(translationKey);
         this.attributeModifiers = new HashMap<EntityAttribute, EntityAttributeModifier>();
-        this.ingredients = Set.of(ingredient);
+        this.ingredients = SetUtils.of(ingredient);
         this.upgradeCosts = upgradeCosts;
         this.appliedEntities = new HashSet<LivingEntity>();
     }

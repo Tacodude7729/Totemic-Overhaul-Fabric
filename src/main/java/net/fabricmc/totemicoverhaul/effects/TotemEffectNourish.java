@@ -4,6 +4,7 @@ import java.util.Set;
 
 import net.fabricmc.totemicoverhaul.TotemItem.TotemEffectInstance;
 import net.fabricmc.totemicoverhaul.TotemItem.TotemType;
+import net.fabricmc.totemicoverhaul.utils.SetUtils;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -14,7 +15,7 @@ import net.minecraft.text.TranslatableText;
 public class TotemEffectNourish implements ITotemEffect {
 
     private static final int[] materialCost = new int[] { 2, 4, 6, 8 };
-    private static final Set<Item> ingredients = Set.of(Items.COOKED_BEEF, Items.COOKED_CHICKEN, Items.COOKED_COD,
+    private static final Set<Item> ingredients = SetUtils.of(Items.COOKED_BEEF, Items.COOKED_CHICKEN, Items.COOKED_COD,
             Items.COOKED_MUTTON, Items.COOKED_PORKCHOP, Items.COOKED_RABBIT, Items.COOKED_SALMON, Items.BAKED_POTATO);
 
     @Override

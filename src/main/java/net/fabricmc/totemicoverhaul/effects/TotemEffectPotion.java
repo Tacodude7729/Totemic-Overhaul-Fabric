@@ -4,6 +4,7 @@ import java.util.Set;
 
 import net.fabricmc.totemicoverhaul.TotemItem.TotemEffectInstance;
 import net.fabricmc.totemicoverhaul.TotemItem.TotemType;
+import net.fabricmc.totemicoverhaul.utils.SetUtils;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -27,7 +28,7 @@ public class TotemEffectPotion implements ITotemEffect {
     public TotemEffectPotion(StatusEffect statusEffect, TotemEffectType effectType, Item ingredient, int[] passiveUpgradeCosts, int[] activeUpgradeCosts) {
         this.statusEffect = statusEffect;
         this.effectType = effectType;
-        this.ingredients = Set.of(ingredient);
+        this.ingredients = SetUtils.of(ingredient);
         this.passiveUpgradeCosts = passiveUpgradeCosts;
         this.activeUpgradeCosts = activeUpgradeCosts;
     }
