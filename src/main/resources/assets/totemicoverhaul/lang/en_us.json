@@ -1,0 +1,55 @@
+{
+    "item.totemicoverhaul.fermented_carrot": "Fermented Carrot",
+    "item.totemicoverhaul.fermented_golden_carrot": "Fermented Golden Carrot",
+    "item.totemicoverhaul.golden_rabbit_foot": "Golden Rabbit's Foot",
+
+
+    "item.totemicoverhaul.totem.name.none": "Blank Totem",
+    "item.totemicoverhaul.totem.name.passive": "Passive Totem",
+    "item.totemicoverhaul.totem.name.passive_netherite": "Passive Netherite Totem",
+    "item.totemicoverhaul.totem.name.passive_broken": "Broken Totem",
+    "item.totemicoverhaul.totem.name.passive_netherite_broken": "Broken Netherite Totem",
+    "item.totemicoverhaul.totem.name.active": "Totem",
+    "item.totemicoverhaul.totem.name.active_netherite": "Netherite Totem",
+
+    "item.totemicoverhaul.totem.tooltip.activate_prefix": "Activates",
+
+    "item.totemicoverhaul.totem.activate.click": "When right clicked",
+    "item.totemicoverhaul.totem.activate.click_entity": "When used on a mob or player",
+    "item.totemicoverhaul.totem.activate.death": "When holding on death",
+    "item.totemicoverhaul.totem.activate.death.effect": "Death Save",
+    "item.totemicoverhaul.totem.activate.tool_break": "When gear breaks",
+    "item.totemicoverhaul.totem.activate.quarter_health": "When lower than 25% health",
+    "item.totemicoverhaul.totem.activate.take_damage": "When you take damage",
+    "item.totemicoverhaul.totem.activate.rain": "When it's raining",
+    "item.totemicoverhaul.totem.activate.sun": "When it's sunny",
+    "item.totemicoverhaul.totem.activate.night": "During night",
+    "item.totemicoverhaul.totem.activate.day": "During the day",
+    "item.totemicoverhaul.totem.activate.void": "When you fall into the void",
+
+    "item.totemicoverhaul.totem.tooltip.effect_prefix": "Effects",
+    "item.totemicoverhaul.totem.tooltip.no_effects": "No Effects",
+
+    "item.totemicoverhaul.totem.effect.spawn": "Spawn Teleport",
+    "item.totemicoverhaul.totem.effect.nourish": "Nourish",
+    "item.totemicoverhaul.totem.effect.clear": "Clear Effects",
+    "item.totemicoverhaul.totem.effect.health": "Instant Health",
+    "item.totemicoverhaul.totem.effect.harming": "Instant Harming",
+    "item.totemicoverhaul.totem.effect.explode": "Explosive",
+    "item.totemicoverhaul.totem.effect.fire": "Flaming",
+
+    "item.totemicoverhaul.totem.effect_level.0": "I",
+    "item.totemicoverhaul.totem.effect_level.1": "II",
+    "item.totemicoverhaul.totem.effect_level.2": "III",
+    "item.totemicoverhaul.totem.effect_level.3": "IV",
+    "item.totemicoverhaul.totem.effect_level.4": "V",
+    "item.totemicoverhaul.totem.effect_level.5": "VI",
+    "item.totemicoverhaul.totem.effect_level.6": "VII",
+    "item.totemicoverhaul.totem.effect_level.7": "VIII",
+    "item.totemicoverhaul.totem.effect_level.8": "IX",
+    "item.totemicoverhaul.totem.effect_level.9": "X",
+
+
+    "item.totemicoverhaul.totem.effect.xp": "XP Boost",
+    "item.totemicoverhaul.totem.effect.durability": "Durability Boost"
+}

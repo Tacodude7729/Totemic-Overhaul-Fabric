@@ -1,0 +1,55 @@
+{
+    "parent": "item/generated",
+    "textures": {
+      "layer0": "totemicoverhaul:item/totem_base"
+    },
+
+    "overrides": [
+      {
+        "predicate": {
+          "totem": 1,
+          "totem_netherite": 0
+        },
+        "model": "totemicoverhaul:item/totem_active"
+      },
+      {
+        "predicate": {
+          "totem": 1,
+          "totem_netherite": 1
+        },
+        "model": "totemicoverhaul:item/totem_active_netherite"
+      },
+      {
+        "predicate": {
+          "totem": 2,
+          "totem_netherite": 0,
+          "totem_broken": 0
+        },
+        "model": "totemicoverhaul:item/totem_passive"
+      },
+      {
+        "predicate": {
+          "totem": 2,
+          "totem_netherite": 0,
+          "totem_broken": 1
+        },
+        "model": "totemicoverhaul:item/totem_passive_broken"
+      },
+      {
+        "predicate": {
+          "totem": 2,
+          "totem_netherite": 1,
+          "totem_broken": 0
+        },
+        "model": "totemicoverhaul:item/totem_passive_netherite"
+      },
+      {
+        "predicate": {
+          "totem": 2,
+          "totem_netherite": 1,
+          "totem_broken": 1
+        },
+        "model": "totemicoverhaul:item/totem_passive_netherite_broken"
+      }
+    ]
+  }

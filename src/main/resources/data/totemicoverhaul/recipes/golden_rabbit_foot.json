@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GCG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_nugget"
+    },
+    "C": {
+      "item": "minecraft:rabbit_foot"
+    }
+  },
+  "result": {
+    "item": "totemicoverhaul:golden_rabbit_foot",
+    "count": 1
+  }
+}

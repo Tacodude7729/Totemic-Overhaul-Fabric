@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QGQ",
+    "IGI",
+    "QGQ"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "totemicoverhaul:totem",
+    "count": 1
+  }
+}

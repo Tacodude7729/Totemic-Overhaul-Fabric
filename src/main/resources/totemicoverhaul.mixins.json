@@ -1,0 +1,17 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "net.fabricmc.totemicoverhaul.mixins",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [
+        "TotemOverrideMixin",
+        "ServerPlayerEntityRespawnMixin"
+    ],
+    "client": [
+        "ModelPredicateMixin"
+    ],
+    "server": [],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

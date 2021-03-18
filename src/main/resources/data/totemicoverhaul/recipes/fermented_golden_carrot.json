@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GCG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_nugget"
+    },
+    "C": {
+      "item": "totemicoverhaul:fermented_carrot"
+    }
+  },
+  "result": {
+    "item": "totemicoverhaul:fermented_golden_carrot",
+    "count": 1
+  }
+}
