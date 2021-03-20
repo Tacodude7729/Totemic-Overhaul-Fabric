@@ -27,6 +27,7 @@ public class TotemActivatorRegistry {
 
         register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_CLICK, Items.LEVER));
         register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_CLICK_ENTITY, Items.GUNPOWDER));
+        register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_VOID, Items.END_STONE));
         register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_DEATH, Items.EMERALD_BLOCK));
         // register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_QUARTER_HEALTH, Items.));
     }

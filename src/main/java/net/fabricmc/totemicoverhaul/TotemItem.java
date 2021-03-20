@@ -88,7 +88,7 @@ public class TotemItem extends Item {
 
                                 int stackDamage = info.getDamage();
                                 if (info.isNetherite()) {
-                                    if (random.nextFloat() < 0.2)
+                                    if (random.nextFloat() < 0.1)
                                         stackDamage += 1;
                                 } else {
                                     stackDamage += 1;
@@ -109,6 +109,17 @@ public class TotemItem extends Item {
                         effectEntry.getKey().tickPassive(player, effectEntry.getValue());
                     }
                     effects.clear();
+
+                }
+            }
+            if (server.getTicks() % 10 == 0) {
+                for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
+                    if (player.getY() <= 0) {
+                        ItemStack totem = findTotem(TotemicOverhaul.ID_TOTEM_ACTIVATOR_VOID, player);
+                        if (totem != null) {
+                            activateTotem(player, totem);
+                        }
+                    }
                 }
             }
         });
@@ -192,6 +203,19 @@ public class TotemItem extends Item {
         } else {
             totem.decrement(1);
         }
+    }
+
+    public static ItemStack findTotem(Identifier activator, ServerPlayerEntity player) {
+        Inventory inv = player.inventory;
+        for (int slot = 0; slot < inv.size(); slot++) {
+            ItemStack stack = inv.getStack(slot);
+            if (stack.getItem() == INSTANCE) {
+                TotemInfo info = new TotemInfo(stack);
+                if (info.isActivatedBy(activator))
+                    return stack;
+            }
+        }
+        return null;
     }
 
     public TotemItem(Settings settings) {
