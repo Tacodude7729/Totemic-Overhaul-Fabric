@@ -172,8 +172,8 @@ public class TotemCrafting extends SpecialCraftingRecipe {
                     for (ITotemEffect effect : allEffects) {
                         if (effect.getIngredients().contains(stack.getItem())) {
                             TotemEffectInstance instance = info.getEffect(effect);
-                            if (instance == null)
-                                info.addEffect(new TotemEffectInstance(effect, 0, 0, info.getType()));
+                            if (info.addEffect(new TotemEffectInstance(effect, 0, 0, info.getType())))
+                                found = true;
                             else {
                                 if (instance.isAtMaxLevel())
                                     return null;
