@@ -1,0 +1,17 @@
+{
+    "name": "Flaming",
+    "icon": "minecraft:flint_and_steel",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Flaming",
+            "item": "minecraft:flint_and_steel",
+            "text": "Needs a flint and steel or fire charge to craft. Sets you on fire for 20 seconds per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Flaming I - 1$(li)Flaming II - 8$(li)Flaming III - 16"
+        }
+    ]
+}
