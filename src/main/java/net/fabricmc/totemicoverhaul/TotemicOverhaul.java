@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.totemicoverhaul.crafting.BookCrafting;
 import net.fabricmc.totemicoverhaul.crafting.TotemCrafting;
 import net.fabricmc.totemicoverhaul.crafting.TotemSmithing;
 import net.minecraft.util.Identifier;
@@ -18,6 +19,7 @@ public class TotemicOverhaul implements ModInitializer, ClientModInitializer {
 		MiscItems.onInit();
 		TotemCrafting.onInit();
 		TotemSmithing.onInit();
+		BookCrafting.onInit();
 		LOGGER.info("Totemic Overhaul by Tacodude Initalized.");
 	}
 
@@ -32,6 +34,7 @@ public class TotemicOverhaul implements ModInitializer, ClientModInitializer {
 	public static Identifier ID_ITEM_TOTEM = new Identifier("totemicoverhaul", "totem");
 
 	public static Identifier ID_RECIPIE_TOTEM = new Identifier("totemicoverhaul", "crafting_special_totem");
+	public static Identifier ID_RECIPIE_BOOK = new Identifier("totemicoverhaul", "crafting_special_book");
 	public static Identifier ID_RECIPIE_TOTEM_UPGRADE = new Identifier("totemicoverhaul", "crafting_special_totem_upgrade");
 
 	public static Identifier ID_MODEL_PREDICATE_TOTEM_TYPE = new Identifier("totem"); // Dosn't work when domain is set

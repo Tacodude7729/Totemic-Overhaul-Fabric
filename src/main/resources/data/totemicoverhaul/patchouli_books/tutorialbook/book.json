@@ -1,7 +1,8 @@
 {
-    "name": "Totemic Overhaul",
-    "landing_text": "Welcome to Totemic Overhaul Test",
-    "subtitle": "Your guid to Totemic Overhaul.",
+    "name": "Totemic Guid",
+    "landing_text": "Welcome to Totemic Overhaul! If your new, start by clicking '1. Basics' on the right.",
     "show_toasts": false,
-    "show_progress": false
+    "show_progress": false,
+    "model": "patchouli:book_purple",
+    "version": 1
 }
