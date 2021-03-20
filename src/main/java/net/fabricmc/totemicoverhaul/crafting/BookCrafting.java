@@ -46,7 +46,7 @@ public class BookCrafting extends SpecialCraftingRecipe {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return null;
+        return BOOK_RECIPE_SERIALIZER;
     }
 
     private ItemStack getResult(CraftingInventory inv) {

@@ -59,7 +59,7 @@ public class TotemCrafting extends SpecialCraftingRecipe {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return null;
+        return TOTEM_RECIPE_SERIALIZER;
     }
 
     private ItemStack getResult(CraftingInventory inv) {
