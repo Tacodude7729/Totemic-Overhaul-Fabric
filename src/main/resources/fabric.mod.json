@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "totemicoverhaul",
-  "version": "0.1a",
+  "version": "1.0",
 
   "name": "Totemic Overhaul",
   "description": "Improves totems in Minecraft.",
@@ -10,7 +10,7 @@
   ],
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/totemicoverhaul/icon.png",
 
   "environment": "*",
   "entrypoints": {
