@@ -172,14 +172,15 @@ public class TotemCrafting extends SpecialCraftingRecipe {
                     for (ITotemEffect effect : allEffects) {
                         if (effect.getIngredients().contains(stack.getItem())) {
                             TotemEffectInstance instance = info.getEffect(effect);
-                            if (info.addEffect(new TotemEffectInstance(effect, 0, 0, info.getType())))
-                                found = true;
-                            else {
+                            if (instance == null) {
+                                if (info.addEffect(new TotemEffectInstance(effect, 0, 0, info.getType())))
+                                    found = true;
+                            } else {
                                 if (instance.isAtMaxLevel())
                                     return null;
                                 instance.setProgress(instance.getProgress() + 1);
+                                found = true;
                             }
-                            found = true;
                         }
                     }
                     if (!found) {
