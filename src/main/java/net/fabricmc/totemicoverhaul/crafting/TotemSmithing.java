@@ -87,11 +87,7 @@ public class TotemSmithing extends SmithingRecipe {
             if (info.getType() == TotemType.PASSIVE) {
                 if (info.isBroken()) {
                     info.setBroken(false);
-                    if (info.isNetherite()) {
-                        info.setDamage(750);
-                    } else {
-                        info.setDamage(0);
-                    }
+                    info.setDamage(0);
                 } else {
                     if (info.isNetherite()) {
                         info.setDamage(Math.max(0, info.getDamage() - 250));

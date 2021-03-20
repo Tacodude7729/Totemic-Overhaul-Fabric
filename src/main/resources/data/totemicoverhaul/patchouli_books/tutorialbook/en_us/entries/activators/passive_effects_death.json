@@ -1,0 +1,13 @@
+{
+    "name": "When holding on death",
+    "icon": "minecraft:emerald_block",
+    "category": "totemicoverhaul:activators_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": " ",
+            "item": "minecraft:emerald_block",
+            "text": "$(l)When holding on death$()$(br2)Needs an emerald blcok to craft. Allows your totem to trigger when you die. Automatically comes with the 'saves you from death' totem effect. Leaves you on 1 hit point."
+        }
+    ]
+}

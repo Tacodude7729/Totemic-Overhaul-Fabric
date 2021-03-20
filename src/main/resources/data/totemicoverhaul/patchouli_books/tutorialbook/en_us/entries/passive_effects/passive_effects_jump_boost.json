@@ -1,0 +1,17 @@
+{
+    "name": "Jump Boost",
+    "icon": "minecraft:rabbit_foot",
+    "category": "totemicoverhaul:passive_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Jump Boost",
+            "item": "minecraft:rabbit_foot",
+            "text": "Needs a rabbit's foot to craft. Increases jump height by 50% per level and decreases fall damage by 1 point per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Jump Boost I - 1$(li)Jump Boost II - 8$(li)Jump Boost III - 16$(li)Jump Boost IV - 32"
+        }
+    ]
+}

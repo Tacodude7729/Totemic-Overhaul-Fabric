@@ -47,7 +47,7 @@ public class TotemEffectRegistry {
         idToEffects = new HashMap<Identifier, ITotemEffect>();
         effectsToId = new HashMap<ITotemEffect, Identifier>();
 
-        register(new Identifier("totemicoverhaul", "speed"), new TotemEffectPotion(StatusEffects.SPEED, TotemEffectType.ACTIVE_ONLY, Items.SUGAR, new int[] {4, 8, 16}, new int[] {32, 64, 128}));
+        register(new Identifier("totemicoverhaul", "speed"), new TotemEffectPotion(StatusEffects.SPEED, TotemEffectType.VERSATILE, Items.SUGAR, new int[] {4, 8, 16}, new int[] {32, 64, 128}));
         register(new Identifier("totemicoverhaul", "haste"), new TotemEffectPotion(StatusEffects.HASTE, TotemEffectType.VERSATILE, Items.GOLDEN_PICKAXE, new int[] {2, 3, 4, 5}, new int[] {2, 8, 16, 32}));
         register(new Identifier("totemicoverhaul", "wither"), new TotemEffectPotion(StatusEffects.WITHER, TotemEffectType.ACTIVE_ONLY, Items.WITHER_ROSE, new int[] {2, 3, 5}));
         register(new Identifier("totemicoverhaul", "strength"), new TotemEffectPotion(StatusEffects.STRENGTH, TotemEffectType.ACTIVE_ONLY, Items.BLAZE_POWDER, new int[] {16, 32}));

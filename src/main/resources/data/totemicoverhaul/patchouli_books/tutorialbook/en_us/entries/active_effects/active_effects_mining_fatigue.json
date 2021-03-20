@@ -1,0 +1,17 @@
+{
+    "name": "Mining Fatigue",
+    "icon": "minecraft:prismarine_shard",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Mining Fatigue",
+            "item": "minecraft:prismarine_shard",
+            "text": "Needs a prismarine shard to craft. Decreases mining speed by %20 per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Mining Fatigue I - 1$(li)Mining Fatigue II - 8$(li)Mining Fatigue III - 16$(li)Mining Fatigue IV - 32"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Fermented Carrot",
+    "icon": "totemicoverhaul:fermented_carrot",
+    "category": "totemicoverhaul:extras_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "totemicoverhaul:fermented_carrot",
+            "text": "The fermented carrot is used for the blindess passive and active effect and to craft the golden fermented carrot. When eaten restores 4 hunger and has an 80% change to inflict hunger."
+        },
+        {
+            "type": "crafting",
+            "recipe": "totemicoverhaul:fermented_carrot",
+            "title": " "
+        }
+    ]
+}

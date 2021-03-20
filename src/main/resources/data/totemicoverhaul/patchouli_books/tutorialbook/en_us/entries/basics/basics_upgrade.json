@@ -1,0 +1,19 @@
+{
+    "name": "6. Upgrades",
+    "icon": "totemicoverhaul:totem{Totem:{Effects:[],Activators:[],Netherite:1b}}",
+    "category": "totemicoverhaul:basics_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "totemicoverhaul:totem{Totem:{Effects:[],Activators:[],Netherite:1b}}",
+            "title": "Upgrading Totems",
+            "text": "Both passive and active totems can be upgraded with netherite in the smithing table. For passive totems, upgrading to netherite increases durability by x10. For active totems, upgrading to netherite allows them to be used 3 times. Upgrading to netherite $(l)does not make totems fireproof$()."
+        },
+        {
+            "type": "image",
+            "images": ["totemicoverhaul:textures/gui/entries/totem_burning.png"],
+            "border": true,
+            "text": "A netherite totem about to die because of how $(l)not fireproof$() it is."
+        }
+    ]
+}

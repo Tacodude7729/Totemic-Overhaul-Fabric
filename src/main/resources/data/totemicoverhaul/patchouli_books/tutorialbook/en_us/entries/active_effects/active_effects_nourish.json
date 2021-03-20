@@ -1,0 +1,17 @@
+{
+    "name": "Nourish",
+    "icon": "minecraft:cooked_beef",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Nourish",
+            "item": "minecraft:cooked_beef",
+            "text": "Needs any cooked meat to craft. Restores 4 hunger points per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Nourish I - 1$(li)Nourish II - 2$(li)Nourish III - 4$(li)Nourish IV - 6$(li)Nourish V - 8"
+        }
+    ]
+}

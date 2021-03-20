@@ -1,0 +1,17 @@
+{
+    "name": "Wither",
+    "icon": "minecraft:wither_rose",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Wither",
+            "item": "minecraft:wither_rose",
+            "text": "Needs a wither rose to craft. Does damage per tick, increases with level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Wither I - 1$(li)Wither II - 2$(li)Wither III - 3$(li)Wither IV - 5"
+        }
+    ]
+}

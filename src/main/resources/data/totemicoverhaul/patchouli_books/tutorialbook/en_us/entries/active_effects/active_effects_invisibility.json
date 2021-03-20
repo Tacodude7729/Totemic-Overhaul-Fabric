@@ -1,0 +1,17 @@
+{
+    "name": "Invisibility",
+    "icon": "totemicoverhaul:fermented_golden_carrot",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Invisibility",
+            "item": "totemicoverhaul:fermented_golden_carrot",
+            "text": "Needs a fermented golden carrot to craft. Stops you from being seen by other player. They can still see your armour and what your holding."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Can't be upgraded."
+        }
+    ]
+}

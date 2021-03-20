@@ -1,0 +1,17 @@
+{
+    "name": "Explosive",
+    "icon": "minecraft:tnt",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Explosive",
+            "item": "minecraft:tnt",
+            "text": "Needs a TNT to craft. Creates an explosion around the user that dosn't damage them. Damages blocks. Explosion radius increases per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Explosive I - 1$(li)Explosive II - 8$(li)Explosive III - 16$(li)Explosive IV - 32"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Haste",
+    "icon": "minecraft:golden_pickaxe",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Haste",
+            "item": "minecraft:golden_pickaxe",
+            "text": "Needs a golden pickaxe to craft. Increases attack speed by %10 per level and increases mining speed by %20 per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Haste I - 1$(li)Haste II - 2$(li)Haste III - 3$(li)Haste IV - 4(li)Haste V - 5"
+        }
+    ]
+}

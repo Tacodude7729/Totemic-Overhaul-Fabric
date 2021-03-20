@@ -1,0 +1,17 @@
+{
+    "name": "Clear Effects",
+    "icon": "minecraft:milk_bucket",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Clear Effects",
+            "item": "minecraft:milk_bucket",
+            "text": "Needs a bucket of milk to craft. Clears all status effects (not including other effects on the totem)."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Can't be upgraded."
+        }
+    ]
+}

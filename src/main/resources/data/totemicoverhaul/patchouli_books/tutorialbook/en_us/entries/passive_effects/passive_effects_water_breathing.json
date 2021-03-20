@@ -1,0 +1,17 @@
+{
+    "name": "Water Breathing",
+    "icon": "minecraft:pufferfish",
+    "category": "totemicoverhaul:passive_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Water Breathing",
+            "item": "minecraft:pufferfish",
+            "text": "Needs a puffer fish to craft. Allows you to breath underwater."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Can't be upgraded."
+        }
+    ]
+}

@@ -14,7 +14,7 @@ import net.minecraft.text.TranslatableText;
 
 public class TotemEffectHarm implements ITotemEffect {
 
-    private static final Set<Item> ingredients = SetUtils.of(Items.FERMENTED_SPIDER_EYE);
+    private static final Set<Item> ingredients = SetUtils.of(Items.STONE_SWORD);
     private static final int[] upgradeCosts = new int[] {8, 16};
 
     @Override

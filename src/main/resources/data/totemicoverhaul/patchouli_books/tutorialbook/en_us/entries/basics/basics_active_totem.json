@@ -1,0 +1,19 @@
+{
+    "name": "2. Active Totems",
+    "icon": "totemicoverhaul:totem{Totem:{Effects:[],Activators:[]}}",
+    "category": "totemicoverhaul:basics_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "totemicoverhaul:totem{Totem:{Effects:[],Activators:[]}}",
+            "title": "Active Totems",
+            "text": "Active totems are totems that activate when a condition is met. This condition could be when you right click the totem, or when you die.$(br)To create an active totem, combine a totem base with two emeralds. To make your new active totem usful you will need to add activators and effects to it."
+        },
+        {
+            "type": "image",
+            "images": ["totemicoverhaul:textures/gui/entries/totem_saving.png"],
+            "border": true,
+            "text": "An unsuspecting player getting saved by their upgraded active totem."
+        }
+    ]
+}

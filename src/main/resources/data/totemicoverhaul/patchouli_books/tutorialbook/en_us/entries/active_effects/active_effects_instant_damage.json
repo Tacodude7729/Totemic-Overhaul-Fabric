@@ -1,0 +1,17 @@
+{
+    "name": "Instant Damage",
+    "icon": "minecraft:stone_sword",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Instant Damage",
+            "item": "minecraft:stone_sword",
+            "text": "Needs a stone sword to craft. Does 4 points of damage per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Instant Damage I - 1$(li)Instant Damage II - 8$(li)Instant Damage III - 16"
+        }
+    ]
+}

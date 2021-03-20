@@ -1,0 +1,17 @@
+{
+    "name": "Fermented Golden Carrot",
+    "icon": "totemicoverhaul:fermented_golden_carrot",
+    "category": "totemicoverhaul:extras_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "totemicoverhaul:fermented_golden_carrot",
+            "text": "The fermented golden carrot is used for the invisibility active effect."
+        },
+        {
+            "type": "crafting",
+            "recipe": "totemicoverhaul:fermented_golden_carrot",
+            "title": " "
+        }
+    ]
+}

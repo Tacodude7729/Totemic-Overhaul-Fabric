@@ -1,0 +1,17 @@
+{
+    "name": "Weakness",
+    "icon": "minecraft:fermented_spider_eye",
+    "category": "totemicoverhaul:passive_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Weakness",
+            "item": "minecraft:fermented_spider_eye",
+            "text": "Needs a fermented spider eye to craft. Decreases melee attack by 4 points per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Weakness I - 1$(li)Weakness II - 8$(li)Weakness III - 16$(li)Weakness IV - 32"
+        }
+    ]
+}

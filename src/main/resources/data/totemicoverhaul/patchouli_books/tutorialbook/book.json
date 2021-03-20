@@ -1,5 +1,7 @@
 {
     "name": "Totemic Overhaul",
-    "landing_text": "Welcome to Totemic Overhaul",
-    "version": 1
+    "landing_text": "Welcome to Totemic Overhaul Test",
+    "subtitle": "Your guid to Totemic Overhaul.",
+    "show_toasts": false,
+    "show_progress": false
 }

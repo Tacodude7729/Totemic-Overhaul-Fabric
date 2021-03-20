@@ -1,0 +1,17 @@
+{
+    "name": "Night Vision",
+    "icon": "minecraft:golden_carrot",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Night Vision",
+            "item": "minecraft:golden_carrot",
+            "text": "Needs a golden carrot to craft. Allows you to see at night."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Can't be upgraded."
+        }
+    ]
+}

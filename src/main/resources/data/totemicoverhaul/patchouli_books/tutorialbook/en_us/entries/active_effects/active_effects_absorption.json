@@ -1,0 +1,17 @@
+{
+    "name": "Absorption",
+    "icon": "minecraft:iron_chestplate",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Absorption",
+            "item": "minecraft:iron_chestplate",
+            "text": "Needs a iron chestplate to craft. Give you temporary extra health."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Absorption I - 1$(li)Absorption II - 4$(li)Absorption III - 8"
+        }
+    ]
+}

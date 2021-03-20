@@ -1,0 +1,17 @@
+{
+    "name": "Luck",
+    "icon": "totemicoverhaul:golden_rabbit_foot",
+    "category": "totemicoverhaul:passive_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Luck",
+            "item": "totemicoverhaul:golden_rabbit_foot",
+            "text": "Needs a golden rabbit's food to craft. Increase the chance of finding treasure while fishing and looking in chests."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Luck I - 1$(li)Luck II - 8$(li)Luck III - 16"
+        }
+    ]
+}

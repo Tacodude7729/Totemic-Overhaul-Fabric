@@ -1,0 +1,17 @@
+{
+    "name": "Regeneration",
+    "icon": "minecraft:ghast_tear",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Regeneration",
+            "item": "minecraft:ghast_tear",
+            "text": "Needs a ghast tear to craft. Heals health per tick, increases with level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Regeneration I - 1$(li)Regeneration II - 3$(li)Regeneration III - 6$(li)Regeneration IV - 9"
+        }
+    ]
+}

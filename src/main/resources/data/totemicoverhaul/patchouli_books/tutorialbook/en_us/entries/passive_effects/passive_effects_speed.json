@@ -1,0 +1,17 @@
+{
+    "name": "Speed",
+    "icon": "minecraft:sugar",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Speed",
+            "item": "minecraft:sugar",
+            "text": "Needs sugar to craft. Increases speed by 20% per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Speed I - 1$(li)Speed II - 4$(li)Speed III - 8$(li)Speed IV - 16"
+        }
+    ]
+}

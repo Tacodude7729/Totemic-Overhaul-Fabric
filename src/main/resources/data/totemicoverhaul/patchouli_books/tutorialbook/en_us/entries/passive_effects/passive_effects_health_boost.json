@@ -1,0 +1,17 @@
+{
+    "name": "Health Boost",
+    "icon": "minecraft:golden_apple",
+    "category": "totemicoverhaul:passive_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Health Boost",
+            "item": "minecraft:golden_apple",
+            "text": "Needs a golden apple to craft. Increases maximum health by 4 points per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Health Boost I - 1$(li)Health Boost II - 8$(li)Health Boost III - 16$(li)Health Boost IV - 24$(li)Health Boost V - 32$(li)Health Boost VI - 40$(li)Health Boost VII - 48"
+        }
+    ]
+}

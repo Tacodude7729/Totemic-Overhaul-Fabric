@@ -1,0 +1,13 @@
+{
+    "name": "When used on a mob",
+    "icon": "minecraft:gunpowder",
+    "category": "totemicoverhaul:activators_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": " ",
+            "item": "minecraft:gunpowder",
+            "text": "$(l)When used on a mob or player$()$(br2)Needs a gunpowder to craft. Allows you to trigger your totem on a mob or player. All effects apply on them not you."
+        }
+    ]
+}

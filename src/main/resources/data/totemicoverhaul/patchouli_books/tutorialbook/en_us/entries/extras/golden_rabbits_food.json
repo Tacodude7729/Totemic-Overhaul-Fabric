@@ -1,0 +1,17 @@
+{
+    "name": "Golden Rabbit's Foot",
+    "icon": "totemicoverhaul:golden_rabbit_foot",
+    "category": "totemicoverhaul:extras_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "totemicoverhaul:golden_rabbit_foot",
+            "text": "The golden rabbit's foot is used for the luck passive effect."
+        },
+        {
+            "type": "crafting",
+            "recipe": "totemicoverhaul:golden_rabbit_foot",
+            "title": " "
+        }
+    ]
+}

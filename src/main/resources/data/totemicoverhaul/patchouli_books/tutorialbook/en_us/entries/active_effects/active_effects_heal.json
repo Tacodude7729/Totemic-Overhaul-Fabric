@@ -1,0 +1,17 @@
+{
+    "name": "Instant Health",
+    "icon": "minecraft:glistering_melon_slice",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Instant Health",
+            "item": "minecraft:glistering_melon_slice",
+            "text": "Needs a glistering melon to craft. Heals 4 health points per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Instant Health I - 1$(li)Instant Health II - 8$(li)Instant Health III - 16$(li)Instant Health IV - 32$(li)Instant Health V - 64$(li)Instant Health VI - 96$(li)Instant Health VII - 128$(li)Instant Health VIII - 160"
+        }
+    ]
+}

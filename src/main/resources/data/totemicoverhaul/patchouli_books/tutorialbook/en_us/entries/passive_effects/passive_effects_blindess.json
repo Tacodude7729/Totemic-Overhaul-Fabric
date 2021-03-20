@@ -1,0 +1,17 @@
+{
+    "name": "Blindess",
+    "icon": "totemicoverhaul:fermented_carrot",
+    "category": "totemicoverhaul:passive_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Blindess",
+            "item": "totemicoverhaul:fermented_carrot",
+            "text": "Needs a fermented carrot to craft. Stops you from seeing things that are not very close to you."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Can't be upgraded."
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Strength",
+    "icon": "minecraft:blaze_powder",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Strength",
+            "item": "minecraft:blaze_powder",
+            "text": "Needs blaze powder to craft. Increases melee damage by 3 points per level."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Upgrade Costs:$(br)$(li)Strength I - 1$(li)Strength II - 16$(li)Strength III - 32"
+        }
+    ]
+}

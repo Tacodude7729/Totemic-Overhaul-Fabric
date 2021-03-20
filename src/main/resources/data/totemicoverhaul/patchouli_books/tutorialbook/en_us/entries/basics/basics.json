@@ -1,0 +1,21 @@
+{
+    "name": "1. Totems 101",
+    "icon": "totemicoverhaul:totem",
+    "category": "totemicoverhaul:basics_category",
+    "priority": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "totemicoverhaul:totem",
+            "link_recipe": true,
+            "title": "Totems 101",
+            "text": "All totems start the same way: as a blank totem. Blank totems will sometimes drop off of evokers, they can be found in chests, or they can be crafted.$(br) There are two types of totems; active totems and passive totems. Active totems need to be 'activated', like being right clicked. Passive totems just work when the're in   your inventory."
+        },
+        {
+            "type": "crafting",
+            "recipe": "totemicoverhaul:totem_base",
+            "title": " ",
+            "text": "$(br2)Once you have a blank totem, you will need to turn it into a either an active totem or a passive totem. (See chapter 2 & 3)."
+        }
+    ]
+}

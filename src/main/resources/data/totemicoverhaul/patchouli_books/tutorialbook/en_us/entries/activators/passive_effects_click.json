@@ -1,0 +1,13 @@
+{
+    "name": "When right rlicked",
+    "icon": "minecraft:lever",
+    "category": "totemicoverhaul:activators_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "",
+            "item": "minecraft:lever",
+            "text": "$(l)When right clicked$()$(br2)Needs a lever to craft. Allows your totem to trigger on right click."
+        }
+    ]
+}

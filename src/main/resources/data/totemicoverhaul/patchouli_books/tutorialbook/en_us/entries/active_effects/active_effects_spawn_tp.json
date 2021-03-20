@@ -1,0 +1,17 @@
+{
+    "name": "Spawn Teleport",
+    "icon": "minecraft:ender_eye",
+    "category": "totemicoverhaul:active_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Spawn Teleport",
+            "item": "minecraft:ender_eye",
+            "text": "Needs an ender eye to craft. Teleports you back to your spawn point."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Can't be upgraded."
+        }
+    ]
+}

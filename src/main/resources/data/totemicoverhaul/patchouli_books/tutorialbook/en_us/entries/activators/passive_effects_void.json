@@ -1,0 +1,13 @@
+{
+    "name": "When you fall into the void",
+    "icon": "minecraft:end_stone",
+    "category": "totemicoverhaul:activators_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": " ",
+            "item": "minecraft:end_stone",
+            "text": "$(l)When you fall into the void$()$(br2)Needs an end stone to craft. Allows your totem to trigger when you fall into the void."
+        }
+    ]
+}

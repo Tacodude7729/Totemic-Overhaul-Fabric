@@ -7,10 +7,10 @@
     "item.totemicoverhaul.totem.name.none": "Blank Totem",
     "item.totemicoverhaul.totem.name.passive": "Passive Totem",
     "item.totemicoverhaul.totem.name.passive_netherite": "Passive Netherite Totem",
-    "item.totemicoverhaul.totem.name.passive_broken": "Broken Totem",
-    "item.totemicoverhaul.totem.name.passive_netherite_broken": "Broken Netherite Totem",
-    "item.totemicoverhaul.totem.name.active": "Totem",
-    "item.totemicoverhaul.totem.name.active_netherite": "Netherite Totem",
+    "item.totemicoverhaul.totem.name.passive_broken": "Broken Passive Totem",
+    "item.totemicoverhaul.totem.name.passive_netherite_broken": "Broken Netherite Passive Totem",
+    "item.totemicoverhaul.totem.name.active": "Active Totem",
+    "item.totemicoverhaul.totem.name.active_netherite": "Netherite Active Totem",
 
     "item.totemicoverhaul.totem.tooltip.activate_prefix": "Activates",
 

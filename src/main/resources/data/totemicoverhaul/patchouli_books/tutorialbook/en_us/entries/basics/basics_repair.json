@@ -1,0 +1,17 @@
+{
+    "name": "7. Repair",
+    "icon": "minecraft:anvil",
+    "category": "totemicoverhaul:basics_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Repairing Totems",
+            "item": "totemicoverhaul:totem{Totem:{Effects:[],Broken:1b}}",
+            "text": "Passive totems and upgraded active totems can break. Luckly, they can also be repaired. In a smithing table netherite active totems can be repaired for an emerald, and passive totems can be repaired for a diamond. Passive totems will never break, much like the Elytra they will go into a broken state instead of"
+        },
+        {
+            "type": "text",
+            "text": "disappearing completely. $(l)Active netherite totems, however, will break permenently$() if not repaired. "
+        }
+    ]
+}

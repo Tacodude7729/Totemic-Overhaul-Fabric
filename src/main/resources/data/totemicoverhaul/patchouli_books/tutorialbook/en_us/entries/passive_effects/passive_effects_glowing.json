@@ -1,0 +1,17 @@
+{
+    "name": "Glowing",
+    "icon": "minecraft:glowstone_dust",
+    "category": "totemicoverhaul:passive_effects_category",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Glowing",
+            "item": "minecraft:glowstone_dust",
+            "text": "Needs glowstone dust to craft. Allows your outline to be seen through walls."
+        },
+        {
+            "type": "text",
+            "text": "$(br)Can't be upgraded."
+        }
+    ]
+}
