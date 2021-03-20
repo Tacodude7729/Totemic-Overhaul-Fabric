@@ -19,7 +19,7 @@
     "item.totemicoverhaul.totem.activate.death": "When holding on death",
     "item.totemicoverhaul.totem.activate.death.effect": "Death Save",
     "item.totemicoverhaul.totem.activate.tool_break": "When gear breaks",
-    "item.totemicoverhaul.totem.activate.quarter_health": "When lower than 25% health",
+    "item.totemicoverhaul.totem.activate.seven_health": "When lower than 8HP",
     "item.totemicoverhaul.totem.activate.take_damage": "When you take damage",
     "item.totemicoverhaul.totem.activate.rain": "When it's raining",
     "item.totemicoverhaul.totem.activate.sun": "When it's sunny",

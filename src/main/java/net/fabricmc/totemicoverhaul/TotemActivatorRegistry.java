@@ -29,7 +29,8 @@ public class TotemActivatorRegistry {
         register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_CLICK_ENTITY, Items.GUNPOWDER));
         register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_VOID, Items.END_STONE));
         register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_DEATH, Items.EMERALD_BLOCK));
-        // register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_QUARTER_HEALTH, Items.));
+        register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_7_HEALTH, Items.NETHER_WART));
+        register(new TotemActivator(TotemicOverhaul.ID_TOTEM_ACTIVATOR_DAMAGE, Items.NETHER_WART_BLOCK));
     }
 
     public static class TotemActivator {

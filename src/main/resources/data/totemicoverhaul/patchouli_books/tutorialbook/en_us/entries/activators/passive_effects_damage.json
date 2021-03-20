@@ -1,13 +1,13 @@
 {
     "name": "When you take damage",
-    "icon": "minecraft:nether_wart",
+    "icon": "minecraft:nether_wart_block",
     "category": "totemicoverhaul:activators_category",
     "pages": [
         {
             "type": "spotlight",
             "title": " ",
-            "item": "minecraft:nether_wart",
-            "text": "$(l)When you take damage$()$(br2)Needs a nether wart to craft. Allows your totem to trigger when you take damage."
+            "item": "minecraft:nether_wart_block",
+            "text": "$(l)When you take damage$()$(br2)Needs a nether wart block to craft. Allows your totem to trigger when you take damage."
         }
     ]
 }

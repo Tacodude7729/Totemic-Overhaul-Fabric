@@ -115,10 +115,10 @@ public class TotemItem extends Item {
             if (server.getTicks() % 10 == 0) {
                 for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
                     if (player.getY() <= 0) {
-                        ItemStack totem = findTotem(TotemicOverhaul.ID_TOTEM_ACTIVATOR_VOID, player);
-                        if (totem != null) {
-                            activateTotem(player, totem);
-                        }
+                        activateTotem(player, findTotem(TotemicOverhaul.ID_TOTEM_ACTIVATOR_VOID, player));
+                    }
+                    if (player.getHealth() < 8) {
+                        activateTotem(player, findTotem(TotemicOverhaul.ID_TOTEM_ACTIVATOR_7_HEALTH, player));
                     }
                 }
             }
@@ -161,6 +161,9 @@ public class TotemItem extends Item {
 
     public static void activateTotem(LivingEntity entity, ItemStack totem) {
         if (entity.world.isClient())
+            return;
+
+        if (totem == null || totem.getItem() != INSTANCE)
             return;
 
         TotemInfo info = new TotemInfo(totem);

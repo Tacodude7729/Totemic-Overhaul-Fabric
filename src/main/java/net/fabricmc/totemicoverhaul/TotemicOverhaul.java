@@ -39,8 +39,9 @@ public class TotemicOverhaul implements ModInitializer, ClientModInitializer {
 	public static Identifier ID_MODEL_PREDICATE_TOTEM_BROKEN = new Identifier("totem_broken");
 
 	public static Identifier ID_TOTEM_ACTIVATOR_CLICK = new Identifier("totemicoverhaul", "click");
+	public static Identifier ID_TOTEM_ACTIVATOR_DAMAGE = new Identifier("totemicoverhaul", "take_damage");
 	public static Identifier ID_TOTEM_ACTIVATOR_CLICK_ENTITY = new Identifier("totemicoverhaul", "click_entity");
 	public static Identifier ID_TOTEM_ACTIVATOR_DEATH = new Identifier("totemicoverhaul", "death");
 	public static Identifier ID_TOTEM_ACTIVATOR_VOID = new Identifier("totemicoverhaul", "void");
-	public static Identifier ID_TOTEM_ACTIVATOR_QUARTER_HEALTH = new Identifier("totemicoverhaul", "quarter_health");
+	public static Identifier ID_TOTEM_ACTIVATOR_7_HEALTH = new Identifier("totemicoverhaul", "seven_health");
 }
