@@ -6,7 +6,7 @@
         {
             "type": "text",
             "title": "Activators",
-            "text": "Active totems need activators. Activators are what determines what triggers a totem. These ranges from right clicking on unsuspecting mobs, falling into lava or dying. Activators can also be combined, so both activators will trigger the totem.$(br2)Each activator has a unique item needed for it's crafting. This item needs to be combine with an active totem. "
+            "text": "Active totems need activators. Activators are what determines what triggers a totem. These range from right clicking on unsuspecting mobs, falling into lava or dying. Activators can also be combined, so both activators will trigger the totem.$(br2)Each activator has a unique item needed for it's crafting. This item needs to be combined with an active totem. "
         },
         {
             "type":"text",

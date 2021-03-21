@@ -8,7 +8,7 @@
             "item": "totemicoverhaul:totem{Totem:{Effects:[]}}",
             "link_recipe": true,
             "title": "Passive Totems",
-            "text": "A passvie totem is a totem which only needs to be in your inventory to work. To create a passive totem, combine a blank totem with two diamonds. Passive totems don't need activators but you still need to put effects on them. Passive totems also have a durabilty wich will be used up over time."
+            "text": "A passvie totem is a totem which only needs to be in your inventory to work. To create a passive totem, combine a blank totem with two diamonds. Passive totems don't need activators but you still need to put effects on them. Passive totems also have a durability which will be used up over time."
         }
     ]
 }
