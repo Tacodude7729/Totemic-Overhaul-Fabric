@@ -5,23 +5,25 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 import net.fabricmc.totemicoverhaul.TotemItem;
-import net.fabricmc.totemicoverhaul.TotemicOverhaul;
 import net.fabricmc.totemicoverhaul.TotemItem.TotemInfo;
+import net.fabricmc.totemicoverhaul.TotemicOverhaul;
+import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Hand;
 
 @Mixin(LivingEntity.class)
 public class TotemOverrideMixin {
 
-    @Redirect(method = "damage",
-              at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/LivingEntity;tryUseTotem(Lnet/minecraft/entity/damage/DamageSource;)Z"))
+    @Redirect(method = "damage", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/LivingEntity;tryUseTotem(Lnet/minecraft/entity/damage/DamageSource;)Z"))
     private boolean tryUseTotem(LivingEntity entity, DamageSource source) {
         TotemInfo totem = null;
         ItemStack totemItem = null;
         Hand[] hands = Hand.values();
-        
+
         for (Hand hand : hands) {
             ItemStack inHand = entity.getStackInHand(hand);
             if (inHand.getItem() == TotemItem.INSTANCE) {
@@ -37,6 +39,8 @@ public class TotemOverrideMixin {
         if (totem != null) {
             entity.setHealth(1F);
             TotemItem.activateTotem(entity, totemItem);
+            if (entity instanceof ServerPlayerEntity)
+                Criteria.USED_TOTEM.trigger((ServerPlayerEntity) entity, new ItemStack(Items.TOTEM_OF_UNDYING));
             return true;
         }
 
