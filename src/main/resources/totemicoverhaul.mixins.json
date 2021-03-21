@@ -6,7 +6,8 @@
     "mixins": [
         "TotemOverrideMixin",
         "ServerPlayerEntityRespawnMixin",
-        "PlayerDamageEventMixin"
+        "PlayerDamageEventMixin",
+        "TryUseTotemMixin"
     ],
     "client": [
         "ModelPredicateMixin"

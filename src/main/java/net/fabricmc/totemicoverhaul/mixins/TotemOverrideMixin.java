@@ -40,6 +40,6 @@ public class TotemOverrideMixin {
             return true;
         }
 
-        return false;
+        return ((TryUseTotemMixin) entity).invokeTryUseTotem(source);
     }
 }
