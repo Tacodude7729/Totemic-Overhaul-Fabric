@@ -1,17 +1,17 @@
 {
-    "name": "Poision",
+    "name": "Poison",
     "icon": "minecraft:spider_eye",
     "category": "totemicoverhaul:active_effects_category",
     "pages": [
         {
             "type": "spotlight",
-            "title": "Poision",
+            "title": "Poison",
             "item": "minecraft:spider_eye",
             "text": "Needs a spider eye to craft. Does damage per tick, increases with level. Can't kill you."
         },
         {
             "type": "text",
-            "text": "$(br)Upgrade Costs:$(br)$(li)Poision I - 1$(li)Poision II - 8$(li)Poision III - 16$(li)Poision IV - 32"
+            "text": "$(br)Upgrade Costs:$(br)$(li)Poison I - 1$(li)Poison II - 8$(li)Poison III - 16$(li)Poison IV - 32"
         }
     ]
 }
