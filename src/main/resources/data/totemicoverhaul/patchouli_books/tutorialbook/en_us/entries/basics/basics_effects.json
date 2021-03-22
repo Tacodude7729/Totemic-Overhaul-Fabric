@@ -6,11 +6,11 @@
         {
             "type": "text",
             "title": "Effects",
-            "text": "Effects are what makes totems do stuff. Active and passive totems both have their own set of effects. Effects can be potion effects or other things like exposions or a spawn teleport.$(br2)Like activators, effects all have a unique crafting ingredient. Unlike activators, effects can also be upgraded. To upgrade an effect, you need to keep combining"
+            "text": "Effects are what makes totems do stuff. Active and passive totems both have their own set of effects. Effects can be potion effects or other things like explosions or a spawn teleport.$(br2)Like activators, effects all have a unique crafting ingredient. Unlike activators, effects can also be upgraded. To upgrade an effect, you need to keep combining"
         },
         {
             "type": "text",
-            "text": " the totem with it's ingredient. For example for the strength effect, you need to combine an active totem with a blaze powder. The totem will than have strength I. To upgrade it to strength II you need to keep combining it with blaze powder untill you have added 16 more. "
+            "text": " the totem with it's ingredient. For example for the strength effect, you need to combine an active totem with a blaze powder. The totem will than have strength I. To upgrade it to strength II you need to keep combining it with blaze powder until you have added 16 more. "
         }
     ]
 }
