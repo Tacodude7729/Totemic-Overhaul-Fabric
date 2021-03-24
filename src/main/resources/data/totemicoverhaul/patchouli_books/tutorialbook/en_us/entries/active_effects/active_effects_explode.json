@@ -7,7 +7,7 @@
             "type": "spotlight",
             "title": "Explosive",
             "item": "minecraft:tnt",
-            "text": "Needs a TNT to craft. Creates an explosion around the user that dosn't damage them. Damages blocks. Explosion radius increases per level."
+            "text": "Needs a TNT to craft. Creates an explosion around the user that doesn't damage them. Damages blocks. Explosion radius increases per level."
         },
         {
             "type": "text",
