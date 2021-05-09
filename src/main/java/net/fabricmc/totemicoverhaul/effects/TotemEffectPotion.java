@@ -50,7 +50,7 @@ public class TotemEffectPotion implements ITotemEffect {
 
     @Override
     public int tickPassive(LivingEntity entity, TotemEffectInstance effectInstance) {
-        entity.applyStatusEffect(new StatusEffectInstance(statusEffect, 200, effectInstance.getLevel(), true, false, false));
+        entity.applyStatusEffect(new StatusEffectInstance(statusEffect, 400, effectInstance.getLevel(), true, false, false));
         return effectInstance.getLevel() + 1;
     }
 

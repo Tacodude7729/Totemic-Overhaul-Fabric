@@ -87,11 +87,14 @@ public class TotemItem extends Item {
                                 }
 
                                 int stackDamage = info.getDamage();
+                                int damageAmount = info.getEffects().size();
+                                if (damageAmount > 5)
+                                    damageAmount = 5;
                                 if (info.isNetherite()) {
                                     if (random.nextFloat() < 0.1)
-                                        stackDamage += 1;
+                                        stackDamage += damageAmount;
                                 } else {
-                                    stackDamage += 1;
+                                    stackDamage += damageAmount;
                                 }
                                 if (stackDamage >= 999) {
                                     stack.getSubTag("Totem").putBoolean("Broken", true);
