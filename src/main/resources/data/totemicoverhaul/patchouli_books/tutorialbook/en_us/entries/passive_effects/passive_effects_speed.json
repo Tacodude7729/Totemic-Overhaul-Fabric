@@ -1,7 +1,7 @@
 {
     "name": "Speed",
     "icon": "minecraft:sugar",
-    "category": "totemicoverhaul:active_effects_category",
+    "category": "totemicoverhaul:passive_effects_category",
     "pages": [
         {
             "type": "spotlight",

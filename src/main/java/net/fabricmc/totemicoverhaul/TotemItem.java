@@ -354,12 +354,12 @@ public class TotemItem extends Item {
             this.type = type;
 
             if (tag.contains("Level", NBTType.ANY_NUMBER.id))
-                this.level = tag.getByte("Level");
+                this.level = tag.getInt("Level");
             else
                 this.level = 0;
 
             if (tag.contains("Progress", NBTType.ANY_NUMBER.id))
-                this.progress = tag.getByte("Progress");
+                this.progress = tag.getInt("Progress");
             else
                 this.progress = 0;
         }
@@ -367,8 +367,8 @@ public class TotemItem extends Item {
         private CompoundTag write() {
             CompoundTag tag = new CompoundTag();
             tag.putString("Effect", TotemEffectRegistry.get(effect).toString());
-            tag.putByte("Level", (byte) level);
-            tag.putByte("Progress", (byte) progress);
+            tag.putInt("Level", level);
+            tag.putInt("Progress", progress);
             return tag;
         }
 

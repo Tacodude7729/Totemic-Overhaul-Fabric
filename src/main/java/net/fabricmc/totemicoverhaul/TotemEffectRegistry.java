@@ -26,6 +26,8 @@ public class TotemEffectRegistry {
     private static HashMap<ITotemEffect, Identifier> effectsToId;
 
     public static ITotemEffect register(Identifier id, ITotemEffect effect) {
+        if (idToEffects.containsKey(id))
+            throw new RuntimeException("You fucked up. Duplicate totem effect identifier "+id+".");
         idToEffects.put(id, effect);
         effectsToId.put(effect, id);
         return effect;
@@ -52,7 +54,6 @@ public class TotemEffectRegistry {
         register(new Identifier("totemicoverhaul", "wither"), new TotemEffectPotion(StatusEffects.WITHER, TotemEffectType.ACTIVE_ONLY, Items.WITHER_ROSE, new int[] {2, 3, 5}));
         register(new Identifier("totemicoverhaul", "strength"), new TotemEffectPotion(StatusEffects.STRENGTH, TotemEffectType.ACTIVE_ONLY, Items.BLAZE_POWDER, new int[] {16, 32}));
         register(new Identifier("totemicoverhaul", "regeneration"), new TotemEffectPotion(StatusEffects.REGENERATION, TotemEffectType.ACTIVE_ONLY, Items.GHAST_TEAR, new int[] {3, 6, 9}));
-        register(new Identifier("totemicoverhaul", "haste"), new TotemEffectPotion(StatusEffects.HASTE, TotemEffectType.ACTIVE_ONLY, Items.SUGAR, new int[] {4, 8, 16}));
         register(new Identifier("totemicoverhaul", "mining_fatigue"), new TotemEffectPotion(StatusEffects.MINING_FATIGUE, TotemEffectType.VERSATILE, Items.PRISMARINE_SHARD, new int[] {8, 16, 32}));
         register(new Identifier("totemicoverhaul", "night_vision"), new TotemEffectPotion(StatusEffects.NIGHT_VISION, TotemEffectType.VERSATILE, Items.GOLDEN_CARROT, new int[] {}));
         register(new Identifier("totemicoverhaul", "blindess"), new TotemEffectPotion(StatusEffects.BLINDNESS, TotemEffectType.VERSATILE, MiscItems.FERMENTED_CARROT, new int[] {}));
