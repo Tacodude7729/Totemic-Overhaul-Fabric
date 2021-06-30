@@ -119,7 +119,7 @@ public class TotemSmithing extends SmithingRecipe {
     }
 
     @Override
-    public boolean method_30029(ItemStack stack) {
+    public boolean testAddition(ItemStack stack) {
         return stack.getItem() == Items.NETHERITE_INGOT;
     }
 }

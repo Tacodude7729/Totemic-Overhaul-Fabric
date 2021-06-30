@@ -9,9 +9,6 @@
         "PlayerDamageEventMixin",
         "TryUseTotemMixin"
     ],
-    "client": [
-        "ModelPredicateMixin"
-    ],
     "server": [],
     "injectors": {
         "defaultRequire": 1

@@ -7,7 +7,7 @@ import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.SpecialRecipeSerializer;
@@ -72,7 +72,7 @@ public class BookCrafting extends SpecialCraftingRecipe {
         if (gold && book) {
             Item patchouliBook = (Item) Registry.ITEM.get(new Identifier("patchouli", "guide_book"));
             ItemStack stack = new ItemStack(patchouliBook, 1);
-            CompoundTag tag = new CompoundTag();
+            NbtCompound tag = new NbtCompound();
             tag.putString("patchouli:book", "totemicoverhaul:tutorialbook");
             stack.setTag(tag);
             return stack;

@@ -15,10 +15,10 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.fabricmc.totemicoverhaul.TotemActivatorRegistry.TotemActivator;
 import net.fabricmc.totemicoverhaul.effects.ITotemEffect;
 import net.fabricmc.totemicoverhaul.effects.ITotemEffect.TotemEffectType;
-import net.fabricmc.totemicoverhaul.mixins.ModelPredicateMixin;
 import net.fabricmc.totemicoverhaul.utils.NBTType;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
@@ -28,10 +28,10 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.ByteTag;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.ListTag;
-import net.minecraft.nbt.StringTag;
+import net.minecraft.nbt.NbtByte;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtList;
+import net.minecraft.nbt.NbtString;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -68,7 +68,7 @@ public class TotemItem extends Item {
                 HashMap<ITotemEffect, TotemEffectInstance> effects = new HashMap<ITotemEffect, TotemEffectInstance>();
                 for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
 
-                    Inventory inv = player.inventory;
+                    Inventory inv = player.getInventory();
                     for (int slot = 0; slot < inv.size(); slot++) {
                         ItemStack stack = inv.getStack(slot);
                         if (stack.getItem() == INSTANCE) {
@@ -129,16 +129,20 @@ public class TotemItem extends Item {
     }
 
     public static void onClientInit() {
-        ModelPredicateMixin.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM_TYPE,
-                (itemStack, clientWorld, livingEntity) -> {
+        FabricModelPredicateProviderRegistry.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM_TYPE,
+                (itemStack, clientWorld, livingEntity, a) -> {
                     return new TotemInfo(itemStack).type.id;
                 });
-        ModelPredicateMixin.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM_NETHERITE,
-                (itemStack, clientWorald, livingEntity) -> {
+        FabricModelPredicateProviderRegistry.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM_TYPE,
+                (itemStack, clientWorld, livingEntity, a) -> {
+                    return new TotemInfo(itemStack).type.id;
+                });
+        FabricModelPredicateProviderRegistry.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM_NETHERITE,
+                (itemStack, clientWorald, livingEntity, a) -> {
                     return new TotemInfo(itemStack).isNetherite() ? 1 : 0;
                 });
-        ModelPredicateMixin.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM_BROKEN,
-                (itemStack, clientWorld, livingEntity) -> {
+        FabricModelPredicateProviderRegistry.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM_BROKEN,
+                (itemStack, clientWorld, livingEntity, a) -> {
                     return new TotemInfo(itemStack).isBroken() ? 1 : 0;
                 });
 
@@ -186,7 +190,7 @@ public class TotemItem extends Item {
 
         for (ServerPlayerEntity player : PlayerLookup.tracking((ServerWorld) entity.world, entity.getBlockPos())) {
             PacketByteBuf packetBuffer = PacketByteBufs.create();
-            packetBuffer.writeInt(entity.getEntityId());
+            packetBuffer.writeInt(entity.getId());
             ServerPlayNetworking.send(player, TotemicOverhaul.ID_NETWORKING_TOTEM_EFFECT_PACKET, packetBuffer);
         }
 
@@ -212,7 +216,7 @@ public class TotemItem extends Item {
     }
 
     public static ItemStack findTotem(Identifier activator, ServerPlayerEntity player) {
-        Inventory inv = player.inventory;
+        Inventory inv = player.getInventory();
         for (int slot = 0; slot < inv.size(); slot++) {
             ItemStack stack = inv.getStack(slot);
             if (stack.getItem() == INSTANCE) {
@@ -348,7 +352,7 @@ public class TotemItem extends Item {
             this.type = type;
         }
 
-        private TotemEffectInstance(CompoundTag tag, TotemType type) {
+        private TotemEffectInstance(NbtCompound tag, TotemType type) {
             Identifier effectKey = new Identifier(tag.getString("Effect"));
             this.effect = TotemEffectRegistry.get(effectKey);
             this.type = type;
@@ -364,8 +368,8 @@ public class TotemItem extends Item {
                 this.progress = 0;
         }
 
-        private CompoundTag write() {
-            CompoundTag tag = new CompoundTag();
+        private NbtCompound write() {
+            NbtCompound tag = new NbtCompound();
             tag.putString("Effect", TotemEffectRegistry.get(effect).toString());
             tag.putInt("Level", level);
             tag.putInt("Progress", progress);
@@ -434,13 +438,13 @@ public class TotemItem extends Item {
                 this.damage = 0;
             }
 
-            CompoundTag totem = stack.getSubTag("Totem");
+            NbtCompound totem = stack.getSubTag("Totem");
             if (totem == null)
                 return;
 
             if (totem.contains("Activators", NBTType.LIST.id)) {
                 type = TotemType.ACTIVE;
-                ListTag activatorList = totem.getList("Activators", NBTType.STRING.id);
+                NbtList activatorList = totem.getList("Activators", NBTType.STRING.id);
                 for (int i = 0; i < activatorList.size(); i++) {
                     TotemActivator activator = TotemActivatorRegistry.get(new Identifier(activatorList.getString(i)));
                     if (activator == null) {
@@ -455,9 +459,9 @@ public class TotemItem extends Item {
             if (totem.contains("Effects", NBTType.LIST.id)) {
                 if (type == TotemType.NONE)
                     type = TotemType.PASSIVE;
-                ListTag effectsTag = totem.getList("Effects", NBTType.COMPOUND.id);
+                NbtList effectsTag = totem.getList("Effects", NBTType.COMPOUND.id);
                 for (int i = 0; i < effectsTag.size(); i++) {
-                    CompoundTag effectTag = effectsTag.getCompound(i);
+                    NbtCompound effectTag = effectsTag.getCompound(i);
                     addEffect(new TotemEffectInstance(effectTag, type));
                 }
             }
@@ -475,21 +479,21 @@ public class TotemItem extends Item {
             if (type == TotemType.NONE) {
                 return new ItemStack(TotemItem.INSTANCE, 1);
             } else {
-                CompoundTag totem = new CompoundTag();
+                NbtCompound totem = new NbtCompound();
                 if (type == TotemType.ACTIVE) {
-                    ListTag activatorsTag = new ListTag();
+                    NbtList activatorsTag = new NbtList();
                     for (TotemActivator activator : activators) {
-                        activatorsTag.add(StringTag.of(activator.id.toString()));
+                        activatorsTag.add(NbtString.of(activator.id.toString()));
                     }
                     totem.put("Activators", activatorsTag);
                 }
-                ListTag effectsTag = new ListTag();
+                NbtList effectsTag = new NbtList();
                 for (Entry<ITotemEffect, TotemEffectInstance> effectEntry : getEffects().entrySet()) {
                     effectsTag.add(effectEntry.getValue().write());
                 }
                 totem.put("Effects", effectsTag);
-                totem.put("Netherite", ByteTag.of(isNetherite));
-                totem.put("Broken", ByteTag.of(isBroken));
+                totem.put("Netherite", NbtByte.of(isNetherite));
+                totem.put("Broken", NbtByte.of(isBroken));
                 ItemStack stack = new ItemStack(TotemItem.INSTANCE, 1);
                 stack.putSubTag("Totem", totem);
                 if (damage != 0)

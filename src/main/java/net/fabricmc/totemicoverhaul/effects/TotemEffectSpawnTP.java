@@ -107,7 +107,7 @@ public class TotemEffectSpawnTP implements ITotemEffect {
             player.detach();
             player.setVelocity(0, 0, 0);
             player.fallDistance = 0;
-            teleportWorld.getChunkManager().addTicket(ChunkTicketType.POST_TELEPORT, new ChunkPos(new BlockPos(teleportPosition.x, teleportPosition.y, teleportPosition.z)), 1, entity.getEntityId());
+            teleportWorld.getChunkManager().addTicket(ChunkTicketType.POST_TELEPORT, new ChunkPos(new BlockPos(teleportPosition.x, teleportPosition.y, teleportPosition.z)), 1, entity.getId());
 
             if (entity.getEntityWorld() == serverWorld2) {
                 player.teleport(player.getX(), player.getY(), player.getZ());
