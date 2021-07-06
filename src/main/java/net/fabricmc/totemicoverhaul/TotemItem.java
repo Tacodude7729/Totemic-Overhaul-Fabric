@@ -418,6 +418,14 @@ public class TotemItem extends Item {
         private boolean isNetherite, isBroken;
         private int damage;
 
+        public TotemInfo(boolean isNetherite, boolean isBroken, TotemType type) {
+            this.type = type;
+            this.isNetherite = isNetherite;
+            this.isBroken = isBroken;
+            this.effects = new HashMap<ITotemEffect, TotemEffectInstance>();
+            this.activators = new ArrayList<TotemActivator>();
+        }
+
         public TotemInfo(TotemType type) {
             this.type = type;
             this.effects = new HashMap<ITotemEffect, TotemEffectInstance>();

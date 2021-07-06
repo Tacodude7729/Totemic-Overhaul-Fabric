@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SmithingRecipe;
 import net.minecraft.util.Identifier;
@@ -46,7 +47,7 @@ public class TotemSmithing extends SmithingRecipe {
     }
 
     public TotemSmithing() {
-        super(null, null, null, null);
+        super(TotemicOverhaul.ID_RECIPIE_TOTEM_UPGRADE, Ingredient.ofStacks(new TotemInfo(false, false, TotemType.ACTIVE).generateStack()), Ingredient.ofItems(Items.NETHERITE_INGOT), new TotemInfo(true, false, TotemType.ACTIVE).generateStack());
     }
 
     @Override
@@ -110,7 +111,7 @@ public class TotemSmithing extends SmithingRecipe {
 
     @Override
     public ItemStack getOutput() {
-        return ItemStack.EMPTY;
+        return new TotemInfo(true, false, TotemType.ACTIVE).generateStack();
     }
 
     @Override
