@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "totemicoverhaul",
-  "version": "1.1.7",
+  "version": "1.2",
 
   "name": "Totemic Overhaul",
   "description": "Vastly expands upon the vanilla totem of undying behavior.",
@@ -9,7 +9,6 @@
     "Tacodude"
   ],
 
-  "license": "CC0-1.0",
   "icon": "assets/totemicoverhaul/icon.png",
 
   "environment": "*",
