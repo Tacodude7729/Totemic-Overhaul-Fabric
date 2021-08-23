@@ -64,6 +64,7 @@ public class TotemEffectRegistry {
         register(new Identifier("totemicoverhaul", "jump_boost"), new TotemEffectPotion(StatusEffects.JUMP_BOOST, TotemEffectType.VERSATILE, Items.RABBIT_FOOT, new int[] {2, 3}, new int[] {8, 16, 32}));
         register(new Identifier("totemicoverhaul", "glowing"), new TotemEffectPotion(StatusEffects.GLOWING, TotemEffectType.VERSATILE, Items.GLOWSTONE_DUST, new int[] {}));
         register(new Identifier("totemicoverhaul", "water_breathing"), new TotemEffectPotion(StatusEffects.WATER_BREATHING, TotemEffectType.VERSATILE, Items.PUFFERFISH, new int[] {}));
+        register(new Identifier("totemicoverhaul", "fire_resistance"), new TotemEffectPotion(StatusEffects.FIRE_RESISTANCE, TotemEffectType.VERSATILE, Items.MAGMA_CREAM, new int[] {}));
         
         register(new Identifier("totemicoverhaul", "health_boost"), new TotemEffectAttributeModifier(StatusEffects.HEALTH_BOOST.getTranslationKey(), Items.GOLDEN_APPLE, new int[] {8, 16, 24, 32, 40, 48}).addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "b7cf1fed-d993-482f-89c5-8be5605f6b31", 4, Operation.ADDITION));
         register(new Identifier("totemicoverhaul", "luck"), new TotemEffectAttributeModifier(StatusEffects.LUCK.getTranslationKey(), MiscItems.GOLDEN_RABBIT_FOOT, new int[] {8, 16}).addAttributeModifier(EntityAttributes.GENERIC_LUCK, "e941389e-0e68-4183-bb09-210e37009414", 1, Operation.ADDITION));
