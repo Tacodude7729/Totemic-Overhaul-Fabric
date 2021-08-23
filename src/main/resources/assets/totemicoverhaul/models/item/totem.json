@@ -8,6 +8,7 @@
       {
         "predicate": {
           "totem": 1,
+          "totem_type": 0,
           "totem_netherite": 0
         },
         "model": "totemicoverhaul:item/totem_active"
@@ -15,13 +16,15 @@
       {
         "predicate": {
           "totem": 1,
+          "totem_type": 0,
           "totem_netherite": 1
         },
         "model": "totemicoverhaul:item/totem_active_netherite"
       },
       {
         "predicate": {
-          "totem": 2,
+          "totem": 1,
+          "totem_type": 1,
           "totem_netherite": 0,
           "totem_broken": 0
         },
@@ -29,7 +32,8 @@
       },
       {
         "predicate": {
-          "totem": 2,
+          "totem": 1,
+          "totem_type": 1,
           "totem_netherite": 0,
           "totem_broken": 1
         },
@@ -37,7 +41,8 @@
       },
       {
         "predicate": {
-          "totem": 2,
+          "totem": 1,
+          "totem_type": 1,
           "totem_netherite": 1,
           "totem_broken": 0
         },
@@ -45,7 +50,8 @@
       },
       {
         "predicate": {
-          "totem": 2,
+          "totem": 1,
+          "totem_type": 1,
           "totem_netherite": 1,
           "totem_broken": 1
         },

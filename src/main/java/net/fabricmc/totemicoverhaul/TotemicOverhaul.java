@@ -37,7 +37,8 @@ public class TotemicOverhaul implements ModInitializer, ClientModInitializer {
 	public static Identifier ID_RECIPIE_BOOK = new Identifier("totemicoverhaul", "crafting_special_book");
 	public static Identifier ID_RECIPIE_TOTEM_UPGRADE = new Identifier("totemicoverhaul", "crafting_special_totem_upgrade");
 
-	public static Identifier ID_MODEL_PREDICATE_TOTEM_TYPE = new Identifier("totem"); // Dosn't work when domain is set
+	public static Identifier ID_MODEL_PREDICATE_TOTEM = new Identifier("totem"); // Dosn't work when domain is set
+	public static Identifier ID_MODEL_PREDICATE_TOTEM_TYPE = new Identifier("totem_type");
 	public static Identifier ID_MODEL_PREDICATE_TOTEM_NETHERITE = new Identifier("totem_netherite");
 	public static Identifier ID_MODEL_PREDICATE_TOTEM_BROKEN = new Identifier("totem_broken");
 

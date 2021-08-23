@@ -129,13 +129,13 @@ public class TotemItem extends Item {
     }
 
     public static void onClientInit() {
-        FabricModelPredicateProviderRegistry.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM_TYPE,
+        FabricModelPredicateProviderRegistry.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM,
                 (itemStack, clientWorld, livingEntity, a) -> {
-                    return new TotemInfo(itemStack).type.id;
+                    return new TotemInfo(itemStack).type.id == 0 ? 0 : 1;
                 });
         FabricModelPredicateProviderRegistry.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM_TYPE,
                 (itemStack, clientWorld, livingEntity, a) -> {
-                    return new TotemInfo(itemStack).type.id;
+                    return new TotemInfo(itemStack).type.id - 1;
                 });
         FabricModelPredicateProviderRegistry.register(INSTANCE, TotemicOverhaul.ID_MODEL_PREDICATE_TOTEM_NETHERITE,
                 (itemStack, clientWorald, livingEntity, a) -> {
